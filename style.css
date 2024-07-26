@@ -307,6 +307,7 @@ main{
     box-sizing: border-box;
     padding-left: 35px;
     font-size: 18px;
+    font-family: CorporateSPro;
 }
 .search-input svg{
     position: absolute;
@@ -326,6 +327,7 @@ main{
     box-sizing: border-box;
     padding-left: 15px;
     font-size: 16px;
+    font-family: CorporateSPro;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -341,6 +343,7 @@ main{
     padding-left: 15px;
     padding-right: 10px;
     font-size: 16px;
+    font-family: CorporateSPro;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -369,6 +372,7 @@ main{
     width: 100%;
     box-sizing: border-box;
     padding: 10px 0 10px 10px;
+    font-family: CorporateSPro;
 }
 .sort-drop-down p:hover{
     background: #eeeeee;
@@ -388,7 +392,7 @@ main{
 }
 .product-card{
     width: 230px;
-    height: 350px;
+    height: 400px;
     margin-bottom: 10px;
 }
 @media screen and (max-width: 850px){
