@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="author" content="Mohammed Ajmal Khan  &lt;dev.ajmalkhan@gmail.com&gt;" />
+    <title>ÉTOILARA | ZOHA KHAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <!-- //menu-icon -->
+        <div class="logo" >
+            <a href="./index.html"><h1>ÉTOILARA</h1></a>
+        </div>
+        
+        <div class="icons">
+            
+        <div class="search-icon">
+             <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" viewBox="0 0 17 17" fill="none" role="img" class="icon nav-v2-search__icon">
+  <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        
+        <div class="cart">
+             <svg class="icon icon-cart-empty" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" >
+  <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="#fff" fill-rule="evenodd" />
+</svg>
+        </div>
+        
+        </div>
+        <!-- //icons -->
+    </nav>
+    <div class="sidenav">
+         <div class="menu-item">
+            <p data-url="./index.html">HOME</p>
+        </div>
+        <div class="menu-item">
+            <p data-url="clothing.html">CLOTHING  <i class="fa-solid fa-arrow-right"></i></p>
+           
+        </div>
+        <div class="menu-item">
+            <p>NEW ARRIVALS  <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="menu-item">
+            <p data-url="hijabs.html">HIJAABS  <i class="fa-solid fa-arrow-right" ></i></p>
+        </div>
+        <div class="menu-item">
+            <p>ABAYAS  <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="menu-item">
+            <p>ACCESSORIES  <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        
+    </div>
+<!--------------------------------//Sidenav-------------------------------------->
+    <div class="overlay"></div>
+    
+<main>
+    <div class="collection-heading">
+        <h1>ABAYAS</h1>
+    </div>
+    
+    <div class="search-and-filter-panel">
+        <div class="search-bar">
+            <button class="search-input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="25px" viewBox="0 0 17 17" fill="none" role="img" class="icon nav-v2-search__icon">
+  <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+ <input type="text" class="" placeholder="Search products" id="searchBar">
+            </button>
+           
+        </div>
+        
+        <div class="filter-bar">
+            <button class="filter-btn"><i class="fa fa-tasks" aria-hidden="true"></i>FILTER BY</button>
+            <button id="sort-btn" class="sort-btn">FEATURED <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+         <div class="sort-drop-down">
+                <p class="sort-option" id="availability">AVAILABILITY</p>
+                <p class="sort-option" id="price-low-to-high">PRICE--LOW TO HIGH</p>
+                <p class="sort-option" id="price-high-to-low">PRICE--HIGH TO LOW</p>
+                <p class="sort-option" id="newest">NEWEST</p>
+                <p class="sort-option" id="oledst">OLDEST</p>
+                <p class="sort-option" id="featured">FEATURED</p>
+            </div>
+    </div>
+    <!-- //search-and-filter-panel   ends -->
+    
+    <section class="products-container">
+        <h3 class="no-result"></h3>
+        <div class="product-card" data-price="2900" data-date="2024-07-24">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1111.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Premium Chiffon Hijabs - Seven Shades</p>
+                <p>Rs. 2,900</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="2199" thedata-date="2024-07-26">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1112.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Premium Chiffon Hijabs - Five Shades</p>
+                <p>Rs. 2,199</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="549" data-date="2024-07-26">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1113.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Premium Chiffon Hijabs - Wine</p>
+                <p>Rs. 549</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="498" data-date="2024-07-26">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1114.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name"> Premium Chiffon Hijabs - Black</p>
+                <p>Rs. 498</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="549" data-date="2024-07-25">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1115.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Premium Chiffon Hijabs - Dark Purple</p>
+                <p>Rs. 549</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="499" data-date="2024-07-22">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1116.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">noPremium Chiffon Hijabs - Mustard</p>
+                <p>Rs. 499</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="499" data-date="2024-07-23"> 
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1117.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Premium Chiffon Hijabs - Denim Blue</p>
+                <p>Rs. 499</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="549" data-date="2024-07-25">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1118.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Crinkle Silk - Satin Hijab - Lilac</p>
+                <p>Rs. 549</p>
+            </div>
+        </div>
+        <div class="product-card" data-price="499" data-date="2024-07-23"> 
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1119.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Crinkle Silk - Satin Hijab - Bottle Green</p>
+                <p>Rs. 549</p>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="549" data-date="2024-07-25">
+            <div class="product-img">
+                <img src="assets/hijabs/IMG_1120.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <p class="product-name">Crinkle Silk - Satin Hijab - Green</p>
+                <p>Rs. 549</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+        <h1><a href="./index.html">ÉTOILARA</a></h1>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        
+        <div class="plugins">
+                <a href="#"><i class="fa-brands fa-twitter" ></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+        </div>
+        
+        <div class="copyrights">
+            <p>&copy; 2024 Crad Craft</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Cookies</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script>
+     const sortBtn= document.getElementById('sort-btn');
+const dropDown = document.querySelector('.sort-drop-down');
+sortBtn.addEventListener('click',() => {
+    if(dropDown.classList.contains('drop-down-open')) {
+        dropDown.classList.remove('drop-down-open');
+    }
+    else{
+        dropDown.classList.add('drop-down-open');
+    }
+});
+
+
+    
+
+function handleSort(event) {
+    const clickedOption = event.target.id;
+    const sortBtn= document.getElementById('sort-btn');
+    switch (clickedOption){
+        case 'availability':
+            //code to sort cards
+            sortBtn.innerHTML = `AVAILABILITY <i class="fa-solid fa-chevron-down"></i>` ;
+            dropDown.classList.remove('drop-down-open');
+            console.log('availability');
+            break;
+        case 'price-low-to-high':
+            //code to sort cards
+            sortBtn.innerHTML = `LOW TO HIGH <i class="fa-solid fa-chevron-down"></i>`;
+            dropDown.classList.remove('drop-down-open');
+            sortByPrice('asc');
+            break;
+        case 'price-high-to-low':
+            //code to sort cards
+            sortBtn.innerHTML = `HIGH TO LOW <i class="fa-solid fa-chevron-down"></i>`;
+            dropDown.classList.remove('drop-down-open');
+            sortByPrice('desc');
+            break;
+        case 'newest':
+            //code to sort cards
+            sortBtn.innerHTML = `NEWEST <i class="fa-solid fa-chevron-down"></i>`;
+            dropDown.classList.remove('drop-down-open');
+            sortByDate('newest');
+            break;
+        case 'oledst':
+            //code to sort cards
+            sortBtn.innerHTML = `OLDEST <i class="fa-solid fa-chevron-down"></i>` ;
+            dropDown.classList.remove('drop-down-open');
+            sortByDate('oldest');
+            break;
+        case 'featured':
+            //code to sort cards
+            sortBtn.innerHTML = `FEATURED <i class="fa-solid fa-chevron-down"></i>`;
+            dropDown.classList.remove('drop-down-open');
+            break;
+        default:
+            console.log('no option clicked');
+    }
+}
+
+const sortOpt = document.querySelectorAll('.sort-option');
+
+sortOpt.forEach(option => {
+    option.addEventListener('click', handleSort);
+    
+});
+
+function sortByPrice(order) {
+    const productList = document.querySelector('.products-container');
+    const products = Array.from(productList.children);
+
+    products.sort((a, b) => {
+        const priceA = parseFloat(a.getAttribute('data-price'));
+        const priceB = parseFloat(b.getAttribute('data-price'));
+
+        if (order === 'asc') {
+            return priceA - priceB;
+        } else {
+            return priceB - priceA;
+        }
+    });
+
+    products.forEach(product => productList.appendChild(product));
+}
+
+
+function sortByDate(order) {
+    const productList = document.querySelector('.products-container');
+    const products = Array.from(productList.children);
+
+    products.sort((a, b) => {
+        const dateA = new Date(a.getAttribute('data-date'));
+        const dateB = new Date(b.getAttribute('data-date'));
+
+        if (order === 'newest') {
+            return dateA - dateB;
+        } else {
+            return dateB - dateA;
+        }
+    });
+
+    products.forEach(product => productList.appendChild(product));
+}
+
+
+document.getElementById('searchBar').addEventListener('input', function() {
+  let searchQuery = this.value.trim().toLowerCase(); // Trim leading/trailing spaces
+  let productCards = document.querySelectorAll('.products-container .product-card');
+  let noResult = document.querySelector('.no-result');
+  let hasVisibleResults = false; // Flag to track if there are any visible results
+
+  productCards.forEach(card => {
+    let productName = card.querySelector('.product-name').textContent.toLowerCase();
+    if (productName.includes(searchQuery) && searchQuery !== '') {
+      card.style.display = ''; // Show the card
+      card.classList.add('add-border');
+      hasVisibleResults = true; // Set flag to true if there are visible results
+    } else if (searchQuery === '') {
+      card.classList.remove('add-border');
+      card.style.display = ''; // Show all cards when the search query is empty
+    } else {
+      card.style.display = 'none'; // Hide the card
+      card.classList.remove('add-border');
+    }
+  });
+
+  // Show or hide the no-result message based on whether there are visible results or an empty search query
+  if (hasVisibleResults || searchQuery === '') {
+    noResult.style.display = 'none'; // Hide the no-result message
+  } else {
+    noResult.style.display = ''; // Show the no-result message
+    noResult.textContent = 'Sorry, there are no products in this collection you searched for';
+  }
+});
+
+</script>
+</body>
+</html>
